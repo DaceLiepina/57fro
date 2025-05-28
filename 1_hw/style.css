@@ -1,0 +1,45 @@
+h1 {
+  text-align: left;
+  color: #4a5759;
+  font-size: 60px;
+  font-style: italic;
+}
+
+h2 {
+  color: #9e2a2b;
+  font-size: 30px;
+  font-style: italic;
+  text-align: left;
+}
+
+.img-prio {
+  width: 150px;
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+body {
+  background-color: #dedbd2;
+}
+
+li {
+  color: #15616d;
+  font-size: 20px;
+  font-style: oblique;
+  text-align: left;
+}
+a {
+  font-size: 18px;
+  font-style: italic;
+  color: brown;
+  text-align: left;
+}
+body {
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Images-Wallpaper-HD-Background-620x388.jpg);
+  background-size: cover;
+}
+.beige {
+  color: beige;
+}

@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+/* отключаем поведение по умолчанию для контейнеров */
+/* теперь внутренние отступы и граница не влияют на физический размер контейнера */
+
+.box{
+    margin: 50px;
+    padding: 30px;
+    border: 10px solid firebrick;
+    height: 300px;
+    width: 300px;
+    background-color: aquamarine;
+}
+li::before {
+  content: '⚡️ ';
+}
+/*punktu vietaa emojy*/
+
+li{
+list-style: none;
+}
+.round {
+  height: 300px;
+  border: 15px dashed salmon;
+  margin-left: 20px;
+  margin-right: 60px;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  /* указываем все значения по часовой стрелки начиная с top */
+  /* padding: 20px 0px 0px 40px; */
+  /* пара значений: верх/ низ и слева/ справа */
+  padding: 20px 60px;
+}
+h3{
+    color: blue;
+}

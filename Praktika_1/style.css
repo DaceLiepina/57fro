@@ -1,0 +1,30 @@
+/* attiecas uz visu dokumentu*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p {
+  color: green;
+}
+/*Selector speeks 0,0,1 - vaajs*/
+.text-color {
+  color: blue;
+}
+/*Selector speeks 0,1,0 - jau stipraaks*/
+p.text-color {
+  color: rgb(226, 198, 43);
+}
+/*Selector speeks 0,1,1 - jau stipri stipraaks, prioritaaraaks par iepriekseejiem*/
+.suricat {
+  width: 300px;
+}
+h1{
+    color: crimson;
+    font-style: oblique;
+}
+body{
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.0rpH-frbPSmmWATgcxs8kAHaE8&pid=Api&P=0&h=180);
+    background-size: cover;
+    
+}

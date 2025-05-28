@@ -1,0 +1,46 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* пример селекторов по тегам */
+
+h1 {
+  text-align: center;
+  color: orangered;
+}
+
+p {
+  color: darkmagenta;
+  font-style: italic;
+}
+
+/* селектор по классу */
+/* обращаемся через точку */
+/* классы придумываем сами */
+/* значение для класса пишем в одно слово */
+
+.bold-underline {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.blue-text {
+  color: rgb(44, 44, 223);
+}
+
+/* селекторы по классу приоритетнее селекторов по тегу - применятся их стили */
+
+p > span {
+  font-size: 28px;
+}
+body{
+    background-color:bisque;
+    
+}
+/* piemeers ar sagrupeetiem elementiem*/
+h3,h4{
+    color: green;
+}
+.img-priority{
+    width: 400px;
+}
