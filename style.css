@@ -1,28 +1,57 @@
 
 h1{
-    color: #43291f;
+    color: #2c3e50;
     font-size: 65px;
     text-align: center;
-   
-    
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px gray;
 }
 .box{
     margin: 50px;
     padding: 30px;
-    border: 10px solid rgb(20, 63, 11);
+    border: 10px solid rgb(62, 63, 62);
     height: 100px;
     max-width: m;
     background-color: #e0afa0;
+    border-radius: 10px;
 
 }
 li::before {
   content: '🔗';
 }
-li{
+li {
 list-style: none;
-font-size: 45px;
-text-align: center;
-color: #43291f;
+padding: 0px;
+margin: 0 auto;
 }
+
+li a{
+color: #2c3e50;
+lighting-color: beige;
+}
+
+body{
+  background-color: rgb(211, 201, 189);
+}
+
+.styled-list li{
+  background-color: rgb(190, 164, 164);
+  margin: 70px 0;
+  margin-left: 20px;
+  margin-right: 60px;
+  margin-bottom: 40px;
+  padding: 15px 10px;
+  border-left: 20px solid #e0afa0;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px gray;
+  font-size: 45px;
+  transition: 0.3s;
+}
+
+
 
 
