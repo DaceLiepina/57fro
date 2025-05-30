@@ -41,9 +41,9 @@ body{
 .styled-list li{
   background-color: rgb(190, 164, 164);
   margin: 70px 0;
-  margin-left: 20px;
-  margin-right: 60px;
-  margin-bottom: 40px;
+  margin-left: 15px;
+  margin-right: 1000px;
+  margin-bottom: 100px;
   padding: 15px 10px;
   border-left: 20px solid #e0afa0;
   border-radius: 20px;
