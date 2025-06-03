@@ -3,25 +3,38 @@ h1 {
   color: #4a5759;
   font-size: 60px;
   font-style: italic;
+  
 }
 
 h2 {
-  color: #9e2a2b;
-  font-size: 30px;
+  color: #4a5759;
+  font-size: 40px;
   font-style: italic;
-  text-align: left;
+  text-align: center;
+  margin: 30px;
+  width: 50%;
+  padding-left:40px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px gray;
+  
 }
 
 .img-prio {
   width: 150px;
   text-align: center;
+  padding-left: 10px;
+  margin: 10px;
+  border-style: solid;
+  border-color: #4a5759;
+  border-radius: 5px;
+
 }
 
-.underline {
-  text-decoration: underline;
-}
+
 body {
   background-color: #dedbd2;
+  font-family: 'Montserrat', sans-serif;
 }
 
 li {
@@ -29,17 +42,46 @@ li {
   font-size: 20px;
   font-style: oblique;
   text-align: left;
+  list-style: none;
+  padding: 0px;
+  margin: 0 auto;
 }
+
+li::before {
+  content: '📍';
+}
+
 a {
   font-size: 18px;
   font-style: italic;
-  color: brown;
+  color: #15616d;
   text-align: left;
+  margin: 20px;
+  padding-left: 40px;
 }
 body {
-  background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Images-Wallpaper-HD-Background-620x388.jpg);
+  background-color:rgb(221, 193, 158) ;
   background-size: cover;
 }
 .beige {
   color: beige;
+}
+.box{
+    margin: 60px;
+    padding: 10px;
+    border: 8px solid rgb(62, 62, 63);
+    height: 100px;
+    max-width: m;
+    background-color: #e7f1d4;
+    border-radius: 40px;
+    text-align: center;
+}
+.img{
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 15px;
+
 }
