@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+main {
+  width: 400vh;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('imagebanner.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    
+
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    width:50%;
+    gap: 20px;
+    
+}
+.logo_height{
+    height: 60px;
+}
+.online{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+span{
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+.oscar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 50px;
+    
+}
+
