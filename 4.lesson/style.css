@@ -1,0 +1,60 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  /*vecaaks*/
+  width: 95%;
+  background-color: #2274a5;
+  height: 400px;
+  display: flex;
+  /*!galvenaas ass iipasiibas*/
+  /*sakaartojaas horizontaali rindaa*/
+  /* включаем свойство flex у родителя позиционируемых элементов */
+  /* * выравнивание по центру по главной оси */
+  justify-content: center;
+  gap: 10px;
+  /* * равномерное распределение про-ва между */
+  /* justify-content: space-between; */
+  /* * равномерное распределение про-ва по бокам */
+  /*justify-content: space-evenly;*/
+  /*!skersojosa ass iipasiibas*/
+  align-items: center;
+
+  /*! Noteikumi, kas maina asis vietaam*/
+  flex-direction: column;
+}
+.item {
+  /*beerni*/
+  background-color: #e07a5f;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #7b9e87;
+  color: green;
+  text-decoration: underline;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-wrap {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-image: url(https://tse1.mm.bing.net/th?id=OIP.zCGQuvq_dBdFRRi5U7kL7gHaEK&pid=Api&P=0&h=180);
+  display: flex;
+  flex-wrap: wrap;
+  /*! noteikums, lai vadiitu elementus peec paarnesanas*/
+  align-content: center ;
+}
+.container-wrap div{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50px;
+}
