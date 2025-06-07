@@ -16,7 +16,11 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 48px;
-    font-weight: bold;
+    
+}
+body{
+    background-color: #efefef;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 main{
     width: 70%;
@@ -29,39 +33,25 @@ main{
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 3);
 }
 .photo{
-aspect-ratio: 16 / 9;
-background-color: rgb(255, 165, 0);
-background-image: url(https://merlion-local.github.io/Gallery_cohort63m/img/img2.jpeg);
-background-position-x: 50%;
-background-position-y: 50%;
-background-repeat: no-repeat;
-background-size: cover;
-border-bottom-left-radius: 15px;
-border-bottom-right-radius: 15px;
-border-top-left-radius: 15px;
-border-top-right-radius: 15px;
-box-shadow:rgba(0, 0, 0, 0.3) 0px 0px 10px 1px;
-box-sizing: border-box;
-display: block;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-height: 312.844px;
-width: 45%;
-margin-bottom: 20px;
-margin-left: 20px;
-margin-right: 20px;
-margin-top: 20px;
-padding-bottom: 0px;
-padding-left: 0px;
-padding-right: 0px;
-padding-top: 0px ior normal;
-transition-delay: 0s;
-transition-duration:0.9s;
-transition-property: all;
-transition-timing-function :ease;
-unicode-bidi: isolate;
-
-
+       width: 45%;/* по две в строке с отступами */
+       aspect-ratio: 16 / 9;
+       margin: 3%;
+       transition: all 0.9s ease;
+       margin: 20px;
+       background-color: orange;
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       border-radius: 15px;
+       box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.3);
+       /* box-shadow: [сдвиг по X] [сдвиг по Y] [размытие] [растяжение] [цвет]; */
 }
+
+.photo.photo1 {}
+.photo:hover{
+    transform: scale(1.5) rotate(6deg);
+}
+
 div {
     display: block;
     unicode-bidi:isolate;
