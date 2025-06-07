@@ -21,9 +21,9 @@ background-color: rgb(255, 165, 0);
 background-image: url(https://merlion-local.github.io/Gallery_cohort63m/img/img2.jpeg);
 background-position-x: 50%;
 background-position-y: 50%;
-background-repeat no-repeat
-background-size cover
-border-bottom-left-radius 15px
+background-repeat: no-repeat;
+background-size: cover;
+border-bottom-left-radius: 15px;
 border-bottom-right-radius 15px
 border-top-left-radius 15px
 border-top-right-radius 15px
