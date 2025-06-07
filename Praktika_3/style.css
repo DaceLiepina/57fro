@@ -1,9 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+head{
+    display: none;
+}
+
 @font-face{
 font-family:Roboto;
 src: url("./Roboto-Regular.ttf");
 }
 h1{
-    font-family: Roboto;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
 }
 main{
     width: 70%;
@@ -24,67 +37,72 @@ background-position-y: 50%;
 background-repeat: no-repeat;
 background-size: cover;
 border-bottom-left-radius: 15px;
-border-bottom-right-radius 15px
-border-top-left-radius 15px
-border-top-right-radius 15px
-box-shadow rgba(0, 0, 0, 0.3) 0px 0px 10px 1px
-box-sizing border-box
-display block
-font-family Verdana, Geneva, Tahoma, sans-serif
-height 145.844px
-margin-bottom 20px
-margin-left 20px
-margin-right 20px
-margin-top 20px
-padding-bottom 0px
-padding-left 0px
-padding-right 0px
-padding-top 0px
-transition-behavior normal
-transition-delay 0s
-transition-duration 0.9s
-transition-property all
-transition-timing-function ease
-unicode-bidi isolate
-width
+border-bottom-right-radius: 15px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+box-shadow:rgba(0, 0, 0, 0.3) 0px 0px 10px 1px;
+box-sizing: border-box;
+display: block;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+height: 312.844px;
+width: 45%;
+margin-bottom: 20px;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 20px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px ior normal;
+transition-delay: 0s;
+transition-duration:0.9s;
+transition-property: all;
+transition-timing-function :ease;
+unicode-bidi: isolate;
 
+
+}
+div {
+    display: block;
+    unicode-bidi:isolate;
 }
 .photo1{
-
+    background-image: url('img1.jpeg') ;
 }
 .photo2{
-    
+    background-image: url('img2.jpeg');  
 }
 .photo3{
-    
-}
-.photo3{
-    
+    background: url('img3.jpeg');
 }
 .photo4{
-    
+    background-image: url('img4.jpeg');
 }
 .photo5{
-    
+   background-image: url('img5.jpeg'); 
 }
 .photo6{
-    
+    background-image: url('img6.jpeg');
 }
 .photo7{
-    
+    background-image: url('img7.jpeg');
 }
 .photo8{
-    
+    background-image: url('img8.jpeg');
 }
 .photo9{
-    
+    background-image: url('img9.jpeg');
 }
+
 .photo10{
+    background-image: url('img10.jpeg');
     
 }
 .photo11{
+    background-image: url('img11.jpg');
     
 }
 .photo12{
+    background-image: url('img12.jpeg');
     
 }
