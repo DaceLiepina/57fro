@@ -33,10 +33,10 @@ main{
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 3);
 }
 .photo{
-       width: 45%;/* по две в строке с отступами */
+       width: 45%;
        aspect-ratio: 16 / 9;
        margin: 3%;
-       transition: all 0.9s ease;
+       transition: all 0.9s ease;  /* pievieno visam pluudumu*/
        margin: 20px;
        background-color: orange;
        background-position: center;
@@ -44,7 +44,7 @@ main{
        background-repeat: no-repeat;
        border-radius: 15px;
        box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.3);
-       /* box-shadow: [сдвиг по X] [сдвиг по Y] [размытие] [растяжение] [цвет]; */
+      
 }
 
 .photo.photo1 {}
