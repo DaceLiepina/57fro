@@ -47,7 +47,9 @@ main{
       
 }
 
-.photo.photo1 {}
+.photo.photo1 {
+
+}
 .photo:hover{
     transform: scale(1.5) rotate(6deg);
 }
