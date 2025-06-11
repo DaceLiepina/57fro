@@ -1,0 +1,110 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.container-item{
+    background-color: lightgreen;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.container-grid{
+    display: grid;
+    gap: 5px;
+    /* задаем правило для колонок */
+  /* grid-template-columns: 100px 200px 30px 300px; */
+    /*grid-template-columns: repeat(4,200px);*/
+    /*grid-template-columns: 50% 10% 15% 25%;*/
+    /*grid-template-columns: repeat(3,1fr);  /*kad vajag vienadi izlidzinat*/
+    /*grid-template-columns: 6fr 2fr 1fr 3fr 5fr 1fr;*/
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.container-grid-minmax{
+    display: grid;
+    grid-auto-rows: 80px;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); /*lai izveidotu adaptiivu galeriju*/
+}
+
+.grid-item-adapt{
+    background-color: lightpink;
+    border-radius: 8px;
+}
+.grid-item-adapt,
+.container-item,
+.header,
+.footer,
+.content,
+.nav,
+.planet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  color: white;
+}
+.grid-item-pic{
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.Yz7ZPtiJNWq_tdfba7FLYwHaEK&pid=Api&P=0&h=180);
+}
+.header{
+    background-color:#ACADE8 ;
+    grid-area: header;
+}
+.footer{
+    background-color:#0A014F ;
+    color: white;
+    grid-area: footer;
+
+}
+.content{
+    background-color:#D65780 ;
+    grid-area: content;
+}
+
+.nav{
+    background-color: #F3E86F;
+    grid-area: nav;
+}
+.container-grid-area {
+    
+  height: 600px;
+  width: 100%;
+  display: grid;
+  
+   /* если нужно можно выставить толщину каждой колонки */
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  /* создаем схему grid зон */
+  grid-template-areas:
+    "header header header nav"
+    "content content sun nav"
+    "content content 🪐 nav"
+    "footer footer footer footer"
+  ;
+}
+
+.sun{
+    background-image: url('https://static.toiimg.com/thumb/msid-99620278,width-1070,height-580,imgsize-16106,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg');
+    height: 100%;
+    grid-area: sun;
+
+
+}
+.planet {
+  background-image: url('https://images.theconversation.com/files/615187/original/file-20240822-16-mmtmxi.jpg?ixlib=rb-4.1.0&rect=0%2C178%2C4964%2C2482&q=45&auto=format&w=1356&h=668&fit=crop');
+  grid-area: 🪐;
+  font-size: 50px;
+}
+.sun,
+.planet {
+  background-size: cover;
+  background-position: center;
+}
+
