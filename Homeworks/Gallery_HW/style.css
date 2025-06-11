@@ -77,9 +77,12 @@ header h1 {
   text-decoration: none;
   border-radius: 5px;
   align-self: flex-start;
-  transition: background-color 0.3s;
+  transition: background-color 0.7s;
+  
+
 }
 
 .character-link:hover {
   background-color: #617e2b;
+  
 }
