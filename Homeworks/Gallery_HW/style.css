@@ -1,6 +1,6 @@
-*{
-margin: 0px;
-padding: 0;
+* {
+  margin: 0px;
+  padding: 0;
   box-sizing: border-box;
 }
 header {
@@ -28,22 +28,19 @@ footer {
   height: 40px;
   position: sticky;
   bottom: 0;
-
 }
 
-footer h1{
-color: beige;
+footer h1 {
+  color: beige;
   text-align: right;
   font-size: 13px;
   margin: 5px;
   padding-right: 5px;
- 
 }
 main {
   flex: 1;
   padding-top: 100px;
   padding-bottom: 60px;
-
 }
 
 header h1 {
@@ -52,6 +49,7 @@ header h1 {
   margin: 0;
   text-shadow: 1px 1 px 3 px;
 }
+
 .character-card {
   background-color: white;
   border-radius: 12px;
@@ -95,14 +93,14 @@ header h1 {
   flex: 1;
 }
 .character-name {
-  font-size: 1.5rem;
+  font-size: 20px;
   margin-bottom: 10px;
-  color: #2c3e50;
+  color: #56626e;
 }
 .character-link {
   display: inline-block;
   padding: 8px 15px;
-  background-color: #617e2b;
+  background-color: #c0caac;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -114,24 +112,45 @@ header h1 {
   background-color: #617e2b;
 }
 
-
 /* Desctop 4 kolonnas */
- @media (min-width: 1024px) {
-      .gallery {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
-    /* Planšete 2-3 kolonnas */
-    @media (min-width: 768px) and (max-width: 1023px) {
-      .gallery {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
+/* Planšete 2-3 kolonnas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 100px;
+  }
+}
 /* Mobilais 1 kolonna */
-    @media (max-width: 767px) {
-      .gallery {
-        grid-template-columns: 1fr;
-        justify-items: center;
-      }
-    }
+@media (max-width: 767px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 150px;
+  }
+}
+h2 i {
+  font-size: 15px;
+  padding: 3px;
+  color: #666;
+}
+h2 i:hover {
+  background-color: rgb(179, 172, 172);
+}
+a i {
+  color: red;
+  font-size: 20px;
+  
+}
+a i:hover{
+  transform: scale(1.4);
+}
+
+
+
+  

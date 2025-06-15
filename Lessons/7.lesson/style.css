@@ -28,7 +28,6 @@ footer {
   color: white;
 }
 
-
 main {
   padding: 10px 50px;
   /* растягиваем main по размеру body */
@@ -73,7 +72,6 @@ nav span:hover {
 
 /* эти css свойства работают для устройств 430px и меньше */
 @media (max-width: 430px) {
-
   header {
     background-color: rgb(85, 148, 249);
   }
@@ -90,5 +88,4 @@ nav span:hover {
   h1 {
     font-size: 25px;
   }
-
 }
