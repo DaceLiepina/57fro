@@ -1,8 +1,9 @@
 body {
   margin: 10;
-  font-family: sans-serif;
+   font-family: "Gluten", cursive;
   display: flex;
  flex-direction: column;
+ 
 
 }
 .banner{
@@ -40,7 +41,7 @@ span{
 .oscar{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     padding: 5px 50px;
 }
 .films{
