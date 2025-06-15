@@ -113,3 +113,25 @@ header h1 {
 .character-link:hover {
   background-color: #617e2b;
 }
+
+
+/* Desctop 4 kolonnas */
+ @media (min-width: 1024px) {
+      .gallery {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* Planšete 2-3 kolonnas */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+/* Mobilais 1 kolonna */
+    @media (max-width: 767px) {
+      .gallery {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+    }
