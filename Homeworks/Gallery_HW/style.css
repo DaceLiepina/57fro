@@ -131,9 +131,47 @@ header h1 {
   .gallery {
     grid-template-columns: 1fr;
     justify-items: center;
-    padding-top: 150px;
+    padding-top: 5px;
+  }
+  header {
+    padding: 20px 30px;
+  }
+  /* Samazina virsrakstu un ikonu */
+  header h1 {
+    font-size: 20px;
+  }
+  .header-icon {
+    font-size: 15px;
+  }
+
+  /* Samazina kāršu nosaukumus */
+  .character-name {
+    font-size: 20px;
+  }
+
+  /* Samazina aprakstus */
+  .character-description {
+    font-size: 15px;
+  }
+
+  /* Kompaktāks footer */
+  footer {
+    padding: 8px;
+    height: auto;
+    min-height: 40px;
+  }
+
+  /* Samazina info ikonas */
+  .info-icon {
+    font-size: 15px;
+  }
+
+  /* Samazina attēlu augstumu */
+  .character-image {
+    height: 100px;
   }
 }
+
 h2 i {
   font-size: 15px;
   padding: 3px;
@@ -145,12 +183,7 @@ h2 i:hover {
 a i {
   color: red;
   font-size: 20px;
-  
 }
-a i:hover{
+a i:hover {
   transform: scale(1.4);
 }
-
-
-
-  
