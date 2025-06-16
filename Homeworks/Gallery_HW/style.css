@@ -25,9 +25,37 @@ body {
 }
 footer {
   background-color: rgb(211, 147, 131);
-  height: 40px;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
   bottom: 0;
+  width: 100%;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+.instagram-icon {
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.instagram-icon:hover {
+  transform: scale(1.2);
+  color: #e1306c;
+}
+.copyright-icon {
+  margin-right: 4px;
 }
 
 footer h1 {
@@ -154,11 +182,24 @@ header h1 {
     font-size: 15px;
   }
 
-  /* Kompaktāks footer */
   footer {
-    padding: 8px;
-    height: auto;
-    min-height: 40px;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  footer h1 {
+    font-size: 0.8rem;
+  }
+
+  .instagram-icon {
+    font-size: 1.2rem;
   }
 
   /* Samazina info ikonas */
