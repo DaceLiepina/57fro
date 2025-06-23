@@ -58,7 +58,7 @@ body {
   white-space: nowrap;
   position: relative;
 }
-.nav-item a::after {
+.nav_item a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -125,6 +125,7 @@ body {
   padding: 30px;
   position: relative;
   width: 100%;
+  
 }
 .zu_gast {
   color: white;
@@ -153,17 +154,29 @@ body {
 }
 .container_item {
   overflow: hidden;
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  vertical-align: top;
+
+  
 }
 .container_item_img {
-  width: 313px;
-  height: 234px;
+  width: 312px;
+  height: 230px;
   object-fit: cover;
+  display: block;
 }
-.footer {
-  background: rgb(84, 84, 84);
-  color: rgb(255, 255, 255);
+
+.footer{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.footer_top_gr {
+  background: rgb(216, 215, 215);
+  color: rgb(24, 23, 23);
   font-size: 16px;
-  margin-top: 40px 20px;
   height: 400px;
   padding-top: 40px;
 }
@@ -171,8 +184,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.footer_columns_gr {
+  display: flex;
+  justify-content: space-between;
+}
 .footer_top {
   padding: 40px 20px;
+  background: rgb(84, 84, 84);
+  color: rgb(255, 255, 255);
   
 }
 
@@ -193,21 +212,50 @@ body {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+
+.footer_columns_gr h4 {
+  color: rgb(8, 8, 8);
+  margin-bottom: 10px;
+
+}
+
+.footer_columns_gr ul {
+  list-style: none;
+  padding: 0;
+}
+.footer_columns_gr ul li {
+  margin-bottom: 10px;
+}
+
+.footer_columns_gr ul li a {
+  color: rgb(12, 12, 12);
+  text-decoration: none;
+}
+
 .footer_bottom {
   text-align: left;
-  margin-top: 60px;
+  margin-top: 40px;
   padding-left: 14px;
 }
 .logo_negativ {
   height: 38px;
-  margin-left: 30px;
-  margin-top: 0px;
+  margin-left:60px;
+  margin-top: 2px;
 }
 .footer_container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
+ 
 }
+.footer_container_gr {
+  max-width: 1200px;
+  height: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
 @media (max-width: 992px) {
   .main_nav {
     display: none;
@@ -227,7 +275,19 @@ body {
     gap: 15px;
   }
 
+  .header_container{
+    grid-template-columns: 1fr;
+  }
+
+  .container_item_img{
+    height: 180px;
+  }
+
   .header_action span {
     display: none;
   }
+  .footer{
+    
+  }
+
 }
