@@ -106,7 +106,7 @@ main {
   height: 450px;
   position: relative;
   background: #333;
-  background-image: url('images/shutterstock_1549382906.jpg');
+  background-image: url(shutterstock_1549382906.jpg);
   background-position: center;
   background-size: cover;
 }
