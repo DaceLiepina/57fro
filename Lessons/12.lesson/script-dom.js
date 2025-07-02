@@ -11,7 +11,7 @@
 // ! DOM methods
 
 // чтобы удобно взаимодействовать с html элементами
-// нам нужно уметь их находить и изменять
+// ? 1. нам нужно уметь их находить и изменять
 // для этого у нас есть методы поиска
 
 const btnPlus = document.querySelector("#btn-plus");
@@ -22,23 +22,29 @@ const counterValue = document.querySelector("#counter");
 
 let counter = 0;
 
-// присваиваем новое значение для данных на странице
-btnPlus.textContent = "плюс";
-btnMinus.textContent = "минус";
+// ? 2.  присваиваем новое значение для данных на странице
+
+btnPlus.textContent = "plus";
+btnMinus.textContent = "minus";
+
+
+// ? 3. funkcija, kas piskaita vienu klaat
 
 const handlePlus = () => {
   // увеличиваем counter на 1
   counter++;
-  // меняем текст на значение переменной
+
+  // ? 4. меняем текст на значение переменной
+
   counterValue.textContent = counter;
 };
-
+// tas pats ar minus
 const handleMinus = () => {
   counter--;
   counterValue.textContent = counter;
 };
 
-// создаем слушатель события для кнопки
+// ? 5. создаем слушатель события для кнопки
 // это способ сделать элемент интерактивным
 
 btnPlus.addEventListener("click", handlePlus);
@@ -70,7 +76,7 @@ heading.addEventListener('click', () => {
   document.body.append(p)
 })
 
-
+// Funkcija, ar kuras paliidziibu pie klikska paraadas bilde btn pogai
 btnCreate.addEventListener('click', () => {
     const img = document.createElement('img')
     img.src = 'https://tse3.mm.bing.net/th/id/OIP.x-ibkw-Kpzz3LV8WfR0W7QHaEo?pid=Api&P=0&h=180'
