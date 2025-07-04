@@ -159,28 +159,53 @@ const starWarsHeroes = [
   { name: "Obi-Wan Kenobi", age: 60, isJedi: true },
 ];
 
-// 1.2
-const warsHeroesAges = starWarsHeroes.filter((el) => el.age < 40);
-console.log(warsHeroesAges);
+// 1.2 filter() 
+// nemuteejosa, tapeec jauna peremennaja
+const starwarsHeroesAges = starWarsHeroes.filter((el) => el.age < 40);
+const youngJedi = starWarsHeroes.filter(el => (el.isJedi === true) && (el.age < 40))
 
-//1.3
+console.log(starwarsHeroesAges);
+console.log(youngJedi)
+
+//1.3 filter + reduce /
+// nemuteejosa, tapeec jauna peremennaja
+const jediAge = starWarsHeroes.filter(el => el.isJedi).reduce((acc, el) => acc + el.age, 0);
 const totalAge = starWarsHeroes.reduce((acc, el) => acc + el.age, 0);
+
 console.log(totalAge);
+console.log(jediAge);
 
-//1.4
+
+// * 1.4 map() + ...spread operator
+// копируем все сво-ва массива и изменяем только нужные из них
 const olderHeroes = starWarsHeroes.map((el) => (el.age += 10));
-console.log(olderHeroes);
 
-//1.5
+const olderHeroes1 = starWarsHeroes.map(el => ({...el, age: el.age +10}))
+
+console.log(olderHeroes);
+console.log(olderHeroes1);
+
+// * 1.5 map() + ...spread operator + ternary operator
+
 const replaceHero = starWarsHeroes.map((hero) =>
   hero.name === "Anakin Skywalker"
     ? { name: "Darth Vader", isJedi: false, age: 50 }
     : hero
 );
 
+
+const sithRevenge = starWarsHeroes.map((el) => (el.name === "Anakin Skywalker" ? { ...el, name: "Darth Vader", isJedi: false } : el));
+
+
+console.log(sithRevenge)
 console.log(replaceHero)
 
 //1.6
 
 const shortInfo = starWarsHeroes.map(({name, isJedi}) => ({name,isJedi}))
+
+const shortHeroes = starWarsHeroes.map(el => ({name: el.name, isJedi: el.isJedi}))
+
+
 console.log(shortInfo)
+console.log(shortHeroes)
