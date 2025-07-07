@@ -1,4 +1,44 @@
-h1{
-    text-align: center;
-    color: blue
+h1 {
+  text-align: center;
+  color: rgb(83, 81, 81);
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+form input {
+  margin: 10px;
+  border-radius: 10px 0 10px;
+  background-color: lightgreen;
+  color: black;
+  border: 2px solid black;
+  padding: 8px;
+}
+
+li {
+  list-style: none;
+}
+li::before {
+  content: "📗";
+}
+
+.btn-submit {
+  padding: 5px 40px;
+  background-color: lemonchiffon;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-clear {
+  padding: 5px 40px;
+  background-color: lemonchiffon;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 }
