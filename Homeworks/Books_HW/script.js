@@ -2,6 +2,7 @@ const form = document.querySelector("#book-form");
 const ul = document.querySelector("#books-list");
 const clearBtn = document.querySelector("#clear-list");
 
+
 let bookList = [
   { title: "Гарри Поттер", author: "Джоан Роулинг" },
   { title: "Железное пламя", author: "Ребекка Яррос" },
@@ -9,7 +10,7 @@ let bookList = [
   { title: "Граф Аверин", author: "Виктор Дашкевич" },
 ];
 
-function allBooks() {
+function renderBooks() {
   ul.innerHTML = "";
   bookList.map((book) => {
     const li = document.createElement("li");
@@ -18,7 +19,7 @@ function allBooks() {
   });
 }
 
-allBooks();
+renderBooks();
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -35,7 +36,7 @@ form.addEventListener("submit", (event) => {
       title: event.target.title.value.trim(),
       author: event.target.author.value.trim(),
     });
-    allBooks();
+    renderBooks();
   }
   event.target.title.value = "";
   event.target.author.value = "";
@@ -43,5 +44,5 @@ form.addEventListener("submit", (event) => {
 
 clearBtn.addEventListener("click", () => {
   bookList = [];
-  allBooks();
+  renderBooks();
 });
