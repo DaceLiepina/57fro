@@ -1,5 +1,5 @@
 function myDay(){
-    return Math.random() < 0.5;
+    return Math.random() >= 0.5;
 }
 
 const dayPromise = new Promise(function(res, rej) {
