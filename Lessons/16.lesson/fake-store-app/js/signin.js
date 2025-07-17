@@ -14,7 +14,7 @@ form.addEventListener("submit", (event) => {
 });
 
 async function fetchLogin(user) {
-     const res = await fetch("https://api.escuelajs.co/api/v1/users", {
+    const res = await fetch("https://api.escuelajs.co/api/v1/users", {
     method: "POST",
     body: JSON.stringify(user),
     headers: { "Content-Type": "application/json" },
