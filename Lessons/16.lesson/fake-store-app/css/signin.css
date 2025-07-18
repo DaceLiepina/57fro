@@ -33,13 +33,14 @@ button:hover {
   background-color: pink;
 }
 
-a{
-color:gray;
+a {
+  color: #3498db;
+  padding: 20px;
+  display: inline-block;
+  margin-top: 2rem;
 }
 
-a:hover{
-    
-    color: blue;
-    cursor: pointer;
-
+a:hover {
+  color: #2c3e50;
+  cursor: pointer;
 }
