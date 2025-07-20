@@ -7,14 +7,25 @@ async function fetchCategories() {
     console.log(categories)
 
     categories.forEach((category) => {
-        const li = document.createElement("li");
-        li.textContent =category.name;
-        listElement.appendChild(li);
 
-       
+        const { name, image} = category;
 
+        const categoryList = document.createElement("li");
 
+        categoryList.classList.add("category-list");
 
-    });
+        const catName = document.createElement("h2");
+
+        const img = document.createElement("img");
+        img.referrerPolicy = "no-referrer";
+
+        catName.textContent = name;
+        img.src = image;
+
+        categoryList.append(catName, img);
+         listElement.appendChild(categoryList);
+    
+
+ });
 }
 fetchCategories();

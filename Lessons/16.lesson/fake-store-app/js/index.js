@@ -14,8 +14,10 @@ async function fetchProducts() {
     productCard.classList.add("product-card");
 
     const titleEl = document.createElement("h2");
+
     const descriptionEl = document.createElement("p");
     const img = document.createElement("img");
+    
     img.referrerPolicy = "no-referrer";
 
     titleEl.textContent = title;
