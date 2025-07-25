@@ -1,31 +1,92 @@
-const listElement = document.getElementById("category-list");
+const categoriesList = document.getElementById("categories");
 
 async function fetchCategories() {
+  const res = await fetch("https://api.escuelajs.co/api/v1/categories");
+  if (!res.ok) {
+    throw Error("Failed to fetch categories");
+  }
+  const categories = await res.json();
+
+  categories.forEach((category) => {
+    const { id, image, name } = category;
+    const categoryItem = document.createElement("li");
+    categoryItem.id = "category-" + id; 
+
+    const img = document.createElement("img");
+    img.src = image;
+
+    const p = document.createElement("p");
+    p.textContent = name;
+
     
-    const res = await fetch ("https://api.escuelajs.co/api/v1/categories");
-    const categories = await res.json();
-    console.log(categories)
+    const deleteBtn = document.createElement("button");
+    deleteBtn.type = "button";
+    deleteBtn.textContent = "Delete";
+    deleteBtn.onclick = () => {
+      fetchDeleteCategory(id);
+    };
 
-    categories.forEach((category) => {
+   
+    const editBtn = document.createElement("button");
+    editBtn.textContent = "Edit";
 
-        const { name, image} = category;
+    const form = document.createElement("form");
+    form.style.display = "none";
+    form.innerHTML = `
+      <input type="text" name="name" value="${name}" placeholder="name" />
+      <input type="text" name="image" value="${image}" placeholder="image" />
+      <button type="submit">Save</button>
+    `;
 
-        const categoryList = document.createElement("li");
+    editBtn.onclick = () => {
+      form.style.display = form.style.display === "block" ? "none" : "block";
+    };
 
-        categoryList.classList.add("category-list");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      fetchUpdateCategory(
+        id,
+        event.target.name.value,
+        event.target.image.value,
+        categoryItem
+      );
+    });
 
-        const catName = document.createElement("h2");
-
-        const img = document.createElement("img");
-        img.referrerPolicy = "no-referrer";
-
-        catName.textContent = name;
-        img.src = image;
-
-        categoryList.append(catName, img);
-         listElement.appendChild(categoryList);
-    
-
- });
+    // pievieno categoryItem klasi caur .classList , lai var css pievienot stilus
+    categoryItem.append(p, img, deleteBtn, editBtn, form);
+    categoryItem.classList.add("category-item");
+    categoriesList.append(categoryItem);
+  });
 }
+
 fetchCategories();
+
+
+async function fetchUpdateCategory(id, name, image, categoryItem) {
+  const res = await fetch(`https://api.escuelajs.co/api/v1/categories/${id}`, {
+    method: "PUT",
+    body: JSON.stringify({ name, image }),
+    headers: { "Content-Type": "application/json" },
+  });
+
+  if (res.ok) {
+    categoryItem.firstChild.textContent = name;
+    categoryItem.getElementsByTagName("img")[0].src = image;
+  }
+}
+
+
+async function fetchDeleteCategory(id) {
+  const res = await fetch(`https://api.escuelajs.co/api/v1/categories/${id}`, {
+    method: "DELETE",
+  });
+
+  if (res.ok) {
+    const categoryItem = document.getElementById("category-" + id);
+    if (categoryItem) {
+      categoryItem.remove();
+    }
+  } else {
+    alert("Is not allowed to delete the category!!!");
+  }
+}
