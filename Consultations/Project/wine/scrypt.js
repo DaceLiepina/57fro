@@ -49,7 +49,7 @@ container.appendChild(card);
 });
 })
 .catch(error => {
-console.error('Kļūda ielādējot vīnus:', error);
+console.error('ERROR by loading the wines:', error);
 });
 
 // 1. Отправить запрос на https://api.sampleapis.com/wines/whites
