@@ -1,0 +1,91 @@
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2016/08/09/21/54/grassland-1581878_640.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Space Grotesk", Arial;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #a6b7c9;
+  color: #252525;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #678db3;
+}
+
+h2{
+    font-size: 50px;
+    color: rgb(249, 249, 252)
+}
+
+#result{
+  background-color: rgba(33, 34, 39, 0.5);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+
+}
+
+input[type="text"]{
+  padding:10px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  width: 300px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 24px;
+  }
+  input[type="text"] {
+    width: 90%;
+  }
+  #result {
+    width: 95%;
+  }
+}
+.spinner {
+border: 8px solid rgba(255, 255, 255, 0.3);
+border-top: 8px solid #ffffff;
+border-radius: 50%;
+width: 60px;
+height: 60px;
+margin: 20px auto;
+animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
