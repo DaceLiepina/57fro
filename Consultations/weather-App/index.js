@@ -92,7 +92,7 @@ document.getElementById("weather");
 async function fetchWeather() {
   const { data } = await axios.get(
     "https://api.bigdatacloud.net/data/reverse-geocode-client"
-  );
+  ); // var get vieta rakstiit post, ja dati jaanosuuta, te get, jo njemam datus
   clearWeatherInfo();
   const { city, latitude, longitude } = data;
 
