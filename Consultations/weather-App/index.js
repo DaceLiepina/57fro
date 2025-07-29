@@ -1,4 +1,13 @@
 
+function clearWeatherInfo(){
+  document.getElementById("cityResult").textContent = "City:";
+  document.getElementById("temperature").textContent = "Temperature: ";
+  document.getElementById("wind").textContent = "Wind: ";
+  document.getElementById("gusts").textContent = "Gusts: ";
+  document.getElementById("weather").textContent = "Weather: ";
+  document.getElementById("result").innerHTML = "";
+}
+
 function interpretWeatherCode(code) {
 
   const weatherCodes = {
@@ -37,6 +46,7 @@ function interpretWeatherCode(code) {
 
 async function getWeather(){
 const apiKey = '9d2758e1689c5c04300530a8f4303e52'; // API key
+clearWeatherInfo();
 const city =document.getElementById("city").value.trim(); //pilseetas peremennaja un sanjemt noziime
 console.log(city);
 if(!city){ //paarbaude, ja nav pilseetas nosaukums, ja tuksa rinda.
@@ -83,7 +93,7 @@ async function fetchWeather() {
   const { data } = await axios.get(
     "https://api.bigdatacloud.net/data/reverse-geocode-client"
   );
-  
+  clearWeatherInfo();
   const { city, latitude, longitude } = data;
 
   cityEl.textContent = city;
