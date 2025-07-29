@@ -3,6 +3,9 @@ const temperature = document.getElementById("temperature");
 const gusts = document.getElementById("gusts");
 const wind = document.getElementById("wind");
 
+
+
+
 async function fetchWeather() {
   const { data } = await axios.get(
     "https://api.bigdatacloud.net/data/reverse-geocode-client"
