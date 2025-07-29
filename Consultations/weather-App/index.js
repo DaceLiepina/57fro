@@ -1,10 +1,10 @@
 
 function clearWeatherInfo(){
   document.getElementById("cityResult").textContent = "City:";
-  document.getElementById("temperature").textContent = "Temperature: ";
-  document.getElementById("wind").textContent = "Wind: ";
+  document.getElementById("temperature").textContent = "Temperature:🌡️";
+  document.getElementById("wind").textContent = "Wind:🎏 ";
   document.getElementById("gusts").textContent = "Gusts: ";
-  document.getElementById("weather").textContent = "Weather: ";
+  document.getElementById("weather").textContent = "Weather:🌦️ ";
   document.getElementById("result").innerHTML = "";
 }
 
