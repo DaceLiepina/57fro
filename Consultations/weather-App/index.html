@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="index.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>weather App</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Weather App</h1>
-    <input type="text" class="city" id="city" placeholder="Enter the city">
+    <input type="text" class="city" id="city" placeholder="Enter the city" />
     <div class="button-container">
-    <button onclick="getWeather()">Get the weather by city</button>
-    <button onclick="fetchWeather()">Use my location</button>
-</div>
-<div id="weather-info">
-    <p id="cityResult">City:</p>
-    <p id="temperature">Temperature: </p>
-    <p id="wind">Wind: </p>
-    <p id="gusts">Gusts: </p>
-    <p id="weather">Weather: </p>
-</div>
-    <div id="loading" class="spinner" style="display: none;"></div>
+
+      <button onclick="getWeather()">Get the weather by city</button>
+      <button onclick="fetchWeather()">Use my location</button>
+      
+    </div>
+    <div id="weather-info">
+      <p id="cityResult">City:</p>
+      <p id="temperature">Temperature:</p>
+      <p id="wind">Wind:</p>
+      <p id="gusts">Gusts:</p>
+      <p id="weather">Weather:</p>
+    </div>
+    <div id="loading" class="spinner" style="display: none"></div>
     <div id="result"></div>
-</body>
+  </body>
 </html>

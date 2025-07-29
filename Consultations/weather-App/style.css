@@ -99,7 +99,11 @@ input[type="text"]{
   }
   .button-container button{
     width: 90%;
-    max-width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px 0;
+
+
   }
 
 }
