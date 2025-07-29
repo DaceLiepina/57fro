@@ -77,7 +77,6 @@ input[type="text"]{
   max-width: 300px;
 }
 
-
 @media (max-width: 600px) {
   h1 {
     font-size: 40px;
@@ -104,8 +103,8 @@ input[type="text"]{
     padding: 10px;
     margin: 5px 0;
   }
-
 }
+
 .spinner {
 border: 8px solid rgba(255, 255, 255, 0.3);
 border-top: 8px solid #ffffff;

@@ -89,12 +89,12 @@ const wind = document.getElementById("wind");
 
 document.getElementById("weather");
 
-async function fetchWeather() {
+async function fetchWeather() { // destrukturizaaciju uzreiz uztaisa
   const { data } = await axios.get(
     "https://api.bigdatacloud.net/data/reverse-geocode-client"
   ); // var get vieta rakstiit post, ja dati jaanosuuta, te get, jo njemam datus
   clearWeatherInfo();
-  const { city, latitude, longitude } = data;
+  const { city, latitude, longitude } = data;// destrukturizaaciju uzreiz uztaisa
 
   cityEl.textContent = city;
   
