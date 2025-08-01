@@ -2,7 +2,7 @@ const cityEl = document.getElementById("city");
 const temperature = document.getElementById("temperature");
 const gusts = document.getElementById("gusts");
 const wind = document.getElementById("wind");
-
+const ctx = document.getElementById('myChart');
 
 
 
@@ -19,7 +19,8 @@ async function fetchWeather() {
 
   // Сделайте запрос
   //   https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&current=temperature_2m,wind_speed_10m,wind_direction_10m,wind_gusts_10m,weather_code
-  //  замените координаты и выведите в консоль всю полученную информацию
+  
+  //  замените координаты и выведите в консоль всю полученную информацию  
   const { data: weatherInfo } = await axios.get(
     `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&current=temperature_2m,wind_speed_10m,wind_direction_10m,wind_gusts_10m,weather_code`
   );
@@ -31,11 +32,32 @@ async function fetchWeather() {
     temperature_2m: tempUnit,
     wind_gusts_10m: gustsUnit,
     wind_speed_10m: speedUnit,
-  } = current_units;
+  } = current_units;  /// te mees paarsaucam par Unit
 
-  temperature.textContent += temperature_2m + tempUnit;
-  gusts.textContent = wind_gusts_10m + gustsUnit;
-  wind.textContent = wind_speed_10m + speedUnit;
+  temperature.textContent += temperature_2m + tempUnit;  
+  gusts.textContent += wind_gusts_10m + gustsUnit;
+  wind.textContent += wind_speed_10m + speedUnit;
+
+  
+  
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['17-00', '18-00', '19-00', '20-00', '21-00', '22-00'],
+      datasets: [{
+        label: 'Temperature',
+        data: [25, 24, 23, 22, 20, 18],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
 
   console.log(weather_code); // код погоды
   // принимает числовой код -> строка с расшифровкой
